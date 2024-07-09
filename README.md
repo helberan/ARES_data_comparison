@@ -12,8 +12,9 @@ This project is a React application that allows you to import Excel data contain
 ## Technology used
 
 - React
+- Vite
 - XLSX (Excel library for JavaScript)
-- CSS
+- Material UI
 - API - ARES (https://ares.gov.cz/stranky/vyvojar-info)
 
 ## Project Setup
@@ -28,10 +29,10 @@ Clone the repository to your local machine. Replace "<repository-url>" with the 
 
 Install the project dependencies. This command will read the package.json file and install all the required packages.
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## Usage
 
@@ -48,5 +49,7 @@ Once comparison is done, click on "Export" to download the processed data as an 
 ## Plan for next development
 
 - add address comparison
+- add routing
+- add filtering
 
 
