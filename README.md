@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Excel Company Data Comparison Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that allows you to import Excel data containing company information, fetch additional data from an API (ARES), and compare it with the imported data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Import Excel file with company data
+- Fetch company names from ARES API using their Business Id number (IČO)
+- Compare imported company names with fetched names
+- Export processed data to Excel
 
-## Expanding the ESLint configuration
+## Technology used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- XLSX (Excel library for JavaScript)
+- CSS
+- API - ARES (https://ares.gov.cz/stranky/vyvojar-info)
 
-- Configure the top-level `parserOptions` property like this:
+## Project Setup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To set up the project on your local machine, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### `git clone <repository-url>`
+
+Clone the repository to your local machine. Replace "<repository-url>" with the URL of our GitHub repository.
+
+### `npm install`
+
+Install the project dependencies. This command will read the package.json file and install all the required packages.
+
+### `npm start`
+
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Usage
+
+### Import Data:
+
+Click on the "Zvolit soubor" button to select an Excel file (.xlsx) containing company data.
+Click "Porovnat" (Compare) to fetch company names from ARES API and compare them with the imported data.
+
+### Export Data:
+
+Once comparison is done, click on "Export" to download the processed data as an Excel file (export.xlsx).
+
+
+## Plan for next development
+
+- add address comparison
+
+
