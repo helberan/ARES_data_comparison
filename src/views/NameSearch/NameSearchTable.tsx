@@ -41,7 +41,7 @@ export const NameSearchTable = ({ tableData }: { tableData: TableData[] }) => {
               </TableCell>
               <TableCell>{company.Subjekt}</TableCell>
               <TableCell>{company.nazevAres ? company.nazevAres : 'NENALEZENO'}</TableCell>
-              <TableCell className={company.shoda ? 'green' : 'red'}>{company.shoda ? 'SHODA' : 'CHYBA'}</TableCell>
+              <TableCell sx={{ color: company.shoda ? 'green' : 'red' }}>{company.shoda ? 'SHODA' : 'CHYBA'}</TableCell>
             </TableRow>
           ))}
         </TableBody>

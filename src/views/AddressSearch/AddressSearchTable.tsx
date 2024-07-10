@@ -57,7 +57,7 @@ export const AddressSearchTable = ({ tableData }: { tableData: TableData[] }) =>
                 {company.nazevUlice} {company.cisloDomovni}
                 {company.cisloOrientacni ? `/${company.cisloOrientacni}` : ''}, {company.nazevObce} {company.psc}
               </TableCell>
-              <TableCell>{company.shoda ? 'SHODA' : 'CHYBA'}</TableCell>
+              <TableCell sx={{ color: company.shoda ? 'green' : 'red' }}>{company.shoda ? 'SHODA' : 'CHYBA'}</TableCell>
             </TableRow>
           ))}
         </TableBody>

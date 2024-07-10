@@ -28,18 +28,19 @@ export const InfoModal = ({ text }: { text: string }) => {
       <HelpIcon onClick={handleOpen} />
       <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            <strong>Příprava dat v EXCELu</strong>
-          </Typography>
           {text === 'nameSearch' ? (
             <div>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                <strong>Příprava dat pro porovnání názvů</strong>
+              </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                 <ul>
                   <li>
                     Excel <strong>nesmí obsahovat</strong> více jak <strong>500 řádků</strong>.
                   </li>
                   <li>
-                    Excel <strong>musí obsahovat</strong> pouze jeden sešit se dvěma sloupci (<strong>"IČ"</strong> a <strong>"Subjekt"</strong>):
+                    Excel <strong>musí obsahovat</strong> pouze jeden sešit se dvěma sloupci (<strong>"IČ"</strong> a&nbsp;<strong>"Subjekt"</strong>
+                    ):
                   </li>
                 </ul>
               </Typography>
@@ -48,6 +49,9 @@ export const InfoModal = ({ text }: { text: string }) => {
             </div>
           ) : (
             <div>
+              <Typography id="modal-modal-title" variant="h6" component="h2">
+                <strong>Příprava dat pro porovnání adres</strong>
+              </Typography>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                 <ul>
                   <li>
