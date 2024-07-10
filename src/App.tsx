@@ -11,8 +11,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { NameSearchWrapper } from './views/NameSearch/NameSearchWrapper';
-import { Form } from './Form';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AddressSearchWrapper } from './views/AddressSearch/AddressSearchWrapper';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -44,14 +44,18 @@ function App() {
           <Divider />
           <List>
             <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemText primary="Porovnat adresy" />
-              </ListItemButton>
+              <Link to="/">
+                <ListItemButton>
+                  <ListItemText primary="Porovnat názvy" />
+                </ListItemButton>
+              </Link>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemText primary="Porovnat názvy" />
-              </ListItemButton>
+              <Link to="/address_comparison">
+                <ListItemButton>
+                  <ListItemText primary="Porovnat adresy" />
+                </ListItemButton>
+              </Link>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
@@ -66,7 +70,7 @@ function App() {
           <Toolbar />
           <Routes>
             <Route path="/" element={<NameSearchWrapper />} />
-            <Route path="/address_comparison" element={<Form />} />
+            <Route path="/address_comparison" element={<AddressSearchWrapper />} />
           </Routes>
         </Box>
       </Box>

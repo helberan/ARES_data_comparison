@@ -1,4 +1,4 @@
-interface Sidlo {
+export interface Sidlo {
   kodStatu: string;
   nazevStatu: string;
   kodKraje: number;
@@ -26,7 +26,30 @@ interface Sidlo {
 export interface ARESSubject {
   ico: string;
   obchodniJmeno: string;
-  sidlo: Sidlo;
+  sidlo: {
+    kodStatu: string;
+    nazevStatu: string;
+    kodKraje: number;
+    nazevKraje: string;
+    kodOkresu: number;
+    kodObce: number;
+    nazevObce: string;
+    kodMestskehoObvodu: number;
+    nazevMestskehoObvodu: string;
+    kodMestskeCastiObvodu: number;
+    kodUlice: number;
+    nazevMestskeCastiObvodu: string;
+    nazevUlice: string;
+    cisloDomovni: number;
+    kodCastiObce: number;
+    cisloOrientacni: number;
+    nazevCastiObce: string;
+    kodAdresnihoMista: number;
+    psc: number;
+    textovaAdresa: string;
+    typCisloDomovni: 1;
+    standardizaceAdresy: boolean;
+  };
   pravniForma: string;
   financniUrad: string;
   datumVzniku: string;
