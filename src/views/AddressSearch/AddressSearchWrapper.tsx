@@ -174,7 +174,7 @@ export const AddressSearchWrapper = () => {
   }, [importedData]);
 
   return (
-    <div className="App">
+    <div className="content-wrapper">
       <header>
         <div className="import-wrapper">
           <div className="import-wrapper-inner">

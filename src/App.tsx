@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
+//import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -13,6 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { NameSearchWrapper } from './views/NameSearch/NameSearchWrapper';
 import { AddressSearchWrapper } from './views/AddressSearch/AddressSearchWrapper';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+//import { Footer } from './Footer';
 
 const drawerWidth = 240;
 
@@ -23,9 +24,9 @@ function App() {
         <CssBaseline />
         <AppBar position="fixed" sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}>
           <Toolbar>
-            <Typography variant="h5" noWrap component="div">
+            {/* <Typography variant="h5" noWrap component="div">
               Porovnání názvů
-            </Typography>
+            </Typography> */}
           </Toolbar>
         </AppBar>
         <Drawer
@@ -44,25 +45,26 @@ function App() {
           <Divider />
           <List>
             <ListItem disablePadding>
-              <Link to="/">
-                <ListItemButton>
+              <Link to="/" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
+                <ListItemButton sx={{ width: '100%' }}>
                   <ListItemText primary="Porovnat názvy" />
                 </ListItemButton>
               </Link>
             </ListItem>
             <ListItem disablePadding>
-              <Link to="/address_comparison">
-                <ListItemButton>
+              <Link to="/address_comparison" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
+                <ListItemButton sx={{ width: '100%' }}>
                   <ListItemText primary="Porovnat adresy" />
                 </ListItemButton>
               </Link>
             </ListItem>
+            <Divider />
             <ListItem disablePadding>
-              <ListItemButton>
-                <a href="https://ares.gov.cz/ekonomicke-subjekty" target="_blank">
+              <a href="https://ares.gov.cz/ekonomicke-subjekty" target="_blank" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
+                <ListItemButton sx={{ width: '100%' }}>
                   <ListItemText primary="ARES" />
-                </a>
-              </ListItemButton>
+                </ListItemButton>
+              </a>
             </ListItem>
           </List>
         </Drawer>
