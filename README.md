@@ -5,8 +5,8 @@ This project is a React application that allows you to import Excel data contain
 ## Features
 
 - Import Excel file with company data
-- Fetch company names from ARES API using their Business Id number (IČO)
-- Compare imported company names with fetched names
+- Fetch company names/addresses from ARES API using their Business Id number (IČO)
+- Compare imported company names/addresses with fetched names/addresses
 - Export processed data to Excel
 
 ## Technology used
@@ -48,8 +48,6 @@ Once comparison is done, click on "Export" to download the processed data as an 
 
 ## Plan for next development
 
-- add address comparison
-- add routing
 - add filtering
 
 
