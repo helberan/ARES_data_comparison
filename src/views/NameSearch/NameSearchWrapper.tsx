@@ -135,7 +135,7 @@ export const NameSearchWrapper = () => {
       <header>
         <div className="import-wrapper">
           <div className="import-wrapper-inner">
-            <InfoModal />
+            <InfoModal text="nameSearch" />
             <Button component="label" role={undefined} variant="contained" tabIndex={-1}>
               Zvolit soubor
               <VisuallyHiddenInput type="file" onChange={handleImport} />
