@@ -2,6 +2,8 @@
 
 This project is a React application that allows you to import Excel data containing company information, fetch additional data from an API (ARES), and compare it with the imported data.
 
+**Disclaimer**: works only with companies that have a Czech business ID.
+
 ## Features
 
 - Import Excel file with company data
@@ -49,5 +51,8 @@ Once comparison is done, click on "Export" to download the processed data as an 
 ## Plan for next development
 
 - add filtering
+- add possibility to export only filtered data
+- add info messages timeout
+- add error message when imported file isn't an .xlsx file
 
 
