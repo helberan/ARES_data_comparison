@@ -50,9 +50,12 @@ Once comparison is done, click on "Export" to download the processed data as an 
 
 ## Plan for next development
 
+- add business ID check on import - trim, no whitespaces in between numbers
+- add error message for 404 fetch error - either wrong business ID format, wrong data in columns
+- add error message when imported file isn't an .xlsx file
 - add filtering
 - add possibility to export only filtered data
 - add info messages timeout
-- add error message when imported file isn't an .xlsx file
+
 
 
