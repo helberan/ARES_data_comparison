@@ -151,7 +151,7 @@ export const AddressSearchWrapper = () => {
 
   //EXPORT
   const handleExport = () => {
-    console.log(companyData);
+    //console.log(companyData);
     if (companyData) {
       const wb = XLSX.utils.book_new();
       const ws = XLSX.utils.json_to_sheet(companyData);
