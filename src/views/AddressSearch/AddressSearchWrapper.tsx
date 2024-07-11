@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ARESSubject, Sidlo } from '../../interfaces';
+import { ARESSubject } from '../../interfaces';
 import * as XLSX from 'xlsx';
 import { InfoModal } from '../../components/InfoModal';
 import { AddressSearchTable } from './AddressSearchTable';
