@@ -46,14 +46,14 @@ function App() {
           <Divider />
           <List>
             <ListItem disablePadding>
-              <Link to="/" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
+              <Link to="/ARES_data_comparison" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
                 <ListItemButton sx={{ width: '100%' }}>
                   <ListItemText primary="Porovnat názvy" />
                 </ListItemButton>
               </Link>
             </ListItem>
             <ListItem disablePadding>
-              <Link to="/address_comparison" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
+              <Link to="/ARES_data_comparison/address_comparison" style={{ textDecoration: 'none', width: '100%', color: 'black' }}>
                 <ListItemButton sx={{ width: '100%' }}>
                   <ListItemText primary="Porovnat adresy" />
                 </ListItemButton>
@@ -73,8 +73,8 @@ function App() {
         <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}>
           <Toolbar />
           <Routes>
-            <Route path="/" element={<NameSearchWrapper />} />
-            <Route path="/address_comparison" element={<AddressSearchWrapper />} />
+            <Route path="/ARES_data_comparison" element={<NameSearchWrapper />} />
+            <Route path="/ARES_data_comparison/address_comparison" element={<AddressSearchWrapper />} />
           </Routes>
         </Box>
         <ScrollToTop />
